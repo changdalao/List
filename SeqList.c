@@ -1,6 +1,6 @@
 #include"SeqList.h"
 
-//´òÓ¡Á´±í
+//æ‰“å°é“¾è¡¨
 void PrintList(SeqList *pHead)
 {
 	assert(pHead);
@@ -12,7 +12,7 @@ void PrintList(SeqList *pHead)
 	printf("\n");
 }
 
-//´´½¨Á´±í
+//åˆ›å»ºé“¾è¡¨
 SeqList* BuyHead(DataType data)
 {
 	SeqList* pNewNode = (SeqList*)malloc(sizeof(SeqList));
@@ -26,13 +26,13 @@ SeqList* BuyHead(DataType data)
 	return pNewNode;
 }
 
-//³õÊ¼»¯Á´±í
+//åˆå§‹åŒ–é“¾è¡¨
 void InitList(SeqList** ppHead)
 {
 	*ppHead = NULL;
 }
 
-//Î²²å
+//å°¾æ’ 
 void PushBack(SeqList** ppHead, DataType data)
 {
 	if (NULL == *ppHead)
@@ -48,7 +48,7 @@ void PushBack(SeqList** ppHead, DataType data)
 	}
 }
 
-//Î²É¾
+//å°¾åˆ 
 void PopBack(SeqList** ppHead)
 {
 	assert(*ppHead);
@@ -69,7 +69,7 @@ void PopBack(SeqList** ppHead)
 	}
 }
 
-//Í·²å
+//å¤´æ’
 void PushFront(SeqList** ppHead, DataType data)
                                                                                                                                                                                                                                                                                                                                                                                                                              {
 	if (NULL == *ppHead)
@@ -82,7 +82,7 @@ void PushFront(SeqList** ppHead, DataType data)
 	}
 }
 
-//Í·É¾
+//å¤´åˆ 
 void PopFront(SeqList** ppHead)
 {
 	assert(*ppHead);
@@ -96,7 +96,7 @@ void PopFront(SeqList** ppHead)
 	}
 }
 
-//²éÕÒ
+//æŸ¥æ‰¾
 SeqList* FindList(SeqList* pHead, DataType data)
 {
 	assert(pHead);
@@ -104,7 +104,7 @@ SeqList* FindList(SeqList* pHead, DataType data)
 	{
 		if (data == pHead->_data)
 		{
-			//printf("ÕÒµ½ÁË->%d\n", pHead->_data);
+			//printf("æ‰¾åˆ°äº†->%d\n", pHead->_data);
 			return pHead;
 		}
 		pHead = pHead->_next;
@@ -113,7 +113,7 @@ SeqList* FindList(SeqList* pHead, DataType data)
 		return NULL;
 }
 
-//ÈÎÒâÎ»ÖÃ²åÈë
+//ä»»æ„ä½ç½®æ’å…¥
 void PopList(SeqList** ppHead, SeqList* pos, DataType data)
 {
 	assert(*ppHead);
@@ -134,7 +134,7 @@ void PopList(SeqList** ppHead, SeqList* pos, DataType data)
 	}
 }
 
-//Ö¸¶¨Î»ÖÃÉ¾³ı
+//æŒ‡å®šä½ç½®åˆ é™¤
 void ListErase(SeqList** ppHead, SeqList* pos)
 {
 	assert(*ppHead);
