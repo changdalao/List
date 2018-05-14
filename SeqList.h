@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<assert.h>
 #include<windows.h>
-#include<string.h>
+#include<string.h> 
 
 typedef int DataType;
 
@@ -11,16 +11,16 @@ typedef struct SeqList
 	struct SeqList* _next;
 }SeqList;
 
-SeqList* BuyHead(DataType data);		//´´½¨½Úµã
-void InitList(SeqList** ppHead);		//³õÊ¼»¯Á´±í
-void PrintList(SeqList *pHead);			//´òÓ¡Á´±í
-void PushBack(SeqList** ppHead, DataType data);//Î²²å
-void PopBack(SeqList** ppHead);			//Î²É¾
-void PushFront(SeqList** ppHead, DataType data);//Í·²å
-void PopFront(SeqList** ppHead);		//Í·É¾
-SeqList* FindList(SeqList* pHead,DataType data);//²éÕÒµ¥Á´±í
-void PopList(SeqList** ppHead, SeqList* pos, DataType data);//ÈÎÒâÎ»ÖÃ²åÈë
-void ListErase(SeqList** ppHead,SeqList* pos);     //Ö¸¶¨Î»ÖÃÉ¾³ı
+SeqList* BuyHead(DataType data);		//åˆ›å»ºèŠ‚ç‚¹
+void InitList(SeqList** ppHead);		//åˆå§‹åŒ–é“¾è¡¨
+void PrintList(SeqList *pHead);			//æ‰“å°é“¾è¡¨
+void PushBack(SeqList** ppHead, DataType data);//å°¾æ’
+void PopBack(SeqList** ppHead);			//å°¾åˆ 
+void PushFront(SeqList** ppHead, DataType data);//å¤´æ’
+void PopFront(SeqList** ppHead);		//å¤´åˆ 
+SeqList* FindList(SeqList* pHead,DataType data);//æŸ¥æ‰¾å•é“¾è¡¨
+void PopList(SeqList** ppHead, SeqList* pos, DataType data);//ä»»æ„ä½ç½®æ’å…¥
+void ListErase(SeqList** ppHead,SeqList* pos);     //æŒ‡å®šä½ç½®åˆ é™¤
 ///////////////////////////////////////////////////////////////////////////////////
 void SLitsPrintTailToHead(SeqList* pphead);
 SeqList* SListFindMidNode(SeqList** phead);
