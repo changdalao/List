@@ -16,7 +16,7 @@ int main()
 	PushBack(&pHead,7);
 	PushBack(&pHead,8);
 	PushBack(&pHead, 9);
-	printf("ÅĞ¶ÏÊÇ·ñÊÇÑ­»·Á´±í>%d\n", SeqListFloyd(pHead));
+	printf("åˆ¤æ–­æ˜¯å¦æ˜¯å¾ªç¯é“¾è¡¨>%d\n", SeqListFloyd(pHead));
 	PushBack(&head, 0);
 	PushBack(&head, 2);
 	PushBack(&head, 6);
@@ -25,75 +25,75 @@ int main()
 	PushBack(&head, 11);
 	PushBack(&head, 12);
 
-	/*printf("Î²²å->\n");
+	/*printf("å°¾æ’->\n");
 	PrintList(pHead);
 ///////////////////////////////////
-	printf("Î²É¾->\n");
+	printf("å°¾åˆ ->\n");
 	PopBack(&pHead);
 	PrintList(pHead);
 ///////////////////////////////////
-	printf("Í·²å->\n");
+	printf("å¤´æ’->\n");
 	PushFront(&pHead, 0);
 	PrintList(pHead);
 //////////////////////////////////
-	printf("Í·É¾->\n");
+	printf("å¤´åˆ ->\n");
 	PopFront(&pHead);
 	PrintList(pHead);
 //////////////////////////////////
-	printf("Ö¸¶¨Î»ÖÃ²åÈë->\n");
+	printf("æŒ‡å®šä½ç½®æ’å…¥->\n");
 	PopList(&pHead,pHead->_next, 6);
 	PrintList(pHead);
 //////////////////////////////////
-	printf("Ö¸¶¨Î»ÖÃÉ¾³ı->\n");
+	printf("æŒ‡å®šä½ç½®åˆ é™¤->\n");
 	ListErase(&pHead, pHead->_next);
 	PrintList(pHead);*/
 ///////////////////////////////////
-//	printf("³õÊ¼Á´±í>");
+//	printf("åˆå§‹é“¾è¡¨>");
 //	PrintList(pHead);
-//	printf("´ÓÎ²µ½Í·´òÓ¡> ");
+//	printf("ä»å°¾åˆ°å¤´æ‰“å°> ");
 //	SLitsPrintTailToHead(pHead);
 //	printf("\n");
 //////////////////////////////////////////
-//	printf("³õÊ¼Á´±í>");
+//	printf("åˆå§‹é“¾è¡¨>");
 //	PrintList(pHead);
-//	printf("É¾³ıÒ»¸öÎŞÍ·µ¥Á´±íµÄ·ÇÎ²½Úµã>");
+//	printf("åˆ é™¤ä¸€ä¸ªæ— å¤´å•é“¾è¡¨çš„éå°¾èŠ‚ç‚¹>");
 //	SListDelNonTailNode(pHead->_next);
 //	PrintList(pHead);
 ///////////////////////////////////////////////
-//	printf("³õÊ¼Á´±í>");
+//	printf("åˆå§‹é“¾è¡¨>");
 //	PrintList(pHead);
-//	printf("ÔÚÎŞÍ·µ¥Á´±íµÄÒ»¸ö½ÚµãÇ°²åÈëÒ»¸ö½Úµã>");
+//	printf("åœ¨æ— å¤´å•é“¾è¡¨çš„ä¸€ä¸ªèŠ‚ç‚¹å‰æ’å…¥ä¸€ä¸ªèŠ‚ç‚¹>");
 //	NoHeadSeqListInsert(&pHead, pHead->_next, 2);
 //	PrintList(pHead);
 //////////////////////////////////////////////////
-//	printf("ÄæÖÃµ¥Á´±í> ");
+//	printf("é€†ç½®å•é“¾è¡¨> ");
 //	SeqListReverse(&pHead);
 //	PrintList(pHead);
 ///////////////////////////////////////////////
-//	printf("Ã°ÅİÅÅĞò> ");
+//	printf("å†’æ³¡æ’åº> ");
 //	SListBubbleSort(pHead);
 //	PrintList(pHead);
 //////////////////////////////////////////////
-//	/*printf("ºÏ²¢ÓĞĞòÁ´±í> ");
+//	/*printf("åˆå¹¶æœ‰åºé“¾è¡¨> ");
 //	SListMerge(&pHead,&head);*/
 ////////////////////////////////////////////
-//	printf("Ñ°ÕÒÖĞ¼ä½Úµã> ");
+//	printf("å¯»æ‰¾ä¸­é—´èŠ‚ç‚¹> ");
 //	SeqList* pos = SListFindMidNode(&pHead);
-//	printf("ÖĞ¼ä½ÚµãÊı¾İ>%d\n", pos->_data);
+//	printf("ä¸­é—´èŠ‚ç‚¹æ•°æ®>%d\n", pos->_data);
 //////////////////////////////////////////
 //	SeqList* cur=SListFindTailKNode(&pHead, 3);
-//	printf("µ¹ÊıµÚÈı¸ö½ÚµãÊı¾İ>%d\n", cur->_data);
-//	printf("µ¹ÊıµÚÈı¸ö½ÚµãµØÖ·>%#p\n", &cur);
+//	printf("å€’æ•°ç¬¬ä¸‰ä¸ªèŠ‚ç‚¹æ•°æ®>%d\n", cur->_data);
+//	printf("å€’æ•°ç¬¬ä¸‰ä¸ªèŠ‚ç‚¹åœ°å€>%#p\n", &cur);
 //////////////////////////////////////////////
-//	printf("³õÊ¼Á´±í> ");
+//	printf("åˆå§‹é“¾è¡¨> ");
 //	PrintList(pHead);
-//	printf("É¾³ıµ¹ÊıµÚÈı¸ö½Úµã> ");
+//	printf("åˆ é™¤å€’æ•°ç¬¬ä¸‰ä¸ªèŠ‚ç‚¹> ");
 //	DeleteKNode(&pHead, 3);
 //	PrintList(pHead);
 //	NoHeadSeqListInsert(&pHead, pHead->_next->_next->_next->_next->_next, 6);
-	//PrintList(pHead);
-	//SeqList* tmp= CircleSListNode(&pHead);
-	//printf("½»µãÊı¾İ>%d\n", tmp->_data);
+//	PrintList(pHead);
+//	SeqList* tmp= CircleSListNode(&pHead);
+//	printf("äº¤ç‚¹æ•°æ®>%d\n", tmp->_data);
 	test11(&pHead);
 	system("pause");
 	return 0;
