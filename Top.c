@@ -83,9 +83,26 @@ void NoHeadSeqListInsert(SeqList** pphead,SeqList* pos,DataType data)
 }
 
 //单链表实现约瑟夫环(JosephCircle)
-void test4()
+SeqList* JoseCir(SeqList* phead, size_t k)
 {
-
+	assert(phead);
+	SeqList* tmp = phead;
+	while (tmp->_next != NULL)//如果不是循环链表，先将链表改变为循环单链表
+		tmp = tmp->_next;
+	tmp->_next = phead;
+	SeqList* cur = phead;
+	while (cur->_next != cur)
+	{
+		int count = k;
+		while (--count)
+			cur = cur->_next;
+		SeqList* next = cur->_next;
+		cur->_data = next->_data;
+		cur->_next = next->_next;
+		free(next);
+		next = NULL;
+	}
+	return cur;
 }
 
 //逆置单链表
